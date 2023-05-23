@@ -401,7 +401,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-
+        <!-- Footer Socials -->
         <div class="footer-social-list">
           <p class="text footer-social-media-text">Social media</p>
           <ul class="footer-icons-list list">
@@ -435,6 +435,26 @@
             </li>
           </ul>
         </div>
+        <!-- Footer Subscribe -->
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-subtitle">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-subscribe-btn">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-footer-subscribe-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -446,41 +466,81 @@
             <use href="./images/icons.svg#icon-modal-close-icon"></use>
           </svg>
         </button>
-        <h3 class="modal-title">
-          Leave your contacts and we will call you back
-        </h3>
-        <form class="modal-inputs">
-          <label>
-            Name
-            <input type="text" name="name" />
+
+        <strong class="modal-title"
+          >Leave your contacts and we will call you back</strong
+        >
+        <form class="modal-form form" name="modal-form">
+          <label class="form-label" for="modal-name">
+            <span class="form-label-title">Name</span>
+            <div class="form-wrapper">
+              <input
+                class="form-field"
+                type="text"
+                name="modal-name"
+                id="modal-name"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-1"></use>
+              </svg>
+            </div>
           </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" />
+
+          <label class="form-label" for="modal-phone"
+            ><span class="form-label-title">Phone</span>
+            <div class="form-wrapper">
+              <input
+                class="form-field"
+                type="text"
+                name="modal-phone"
+                id="modal-phone"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
           </label>
-          <label>
-            Email
-            <input type="email" name="email" />
+
+          <label class="form-label" for="modal-email"
+            ><span class="form-label-title">Email</span>
+            <div class="form-wrapper">
+              <input
+                class="form-field"
+                type="text"
+                name="modal-email"
+                id="modal-email"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
           </label>
-          <label>
-            Comment
+
+          <label class="form-label" for="modal-comment"
+            ><span class="form-label-title">Comment</span>
             <textarea
-              name="comment"
-              rows="10"
+              class="form-label-textarea"
+              name="modal-comment"
+              id="modal-comment"
+              rows="5"
               placeholder="Text input"
             ></textarea>
           </label>
-
-          <label>
-            <input type="checkbox" name="agreement" />
-            <label
+        </form>
+        <form>
+          <label class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="modal-agreement"
+            />
+            <span class="form-check-text"
               >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
+              <a href="">Privacy Policy</a></span
             >
           </label>
-
-          <button type="submit" class="modal-submit-btn">Send</button>
         </form>
+        <button class="modal-submit-btn" type="submit">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
