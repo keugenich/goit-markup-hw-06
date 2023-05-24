@@ -813,7 +813,7 @@ img {
 }
 .form-icon {
   position: absolute;
-  top: 50%;
+  top: 64%;
   left: 16px;
   transform: translateY(-50%);
   fill: var(--dark-color);
